@@ -1,6 +1,6 @@
 $(function() {
 	
-	var menu="Contact";
+	
 	switch (menu) {
 	case 'Contact':
 		$('#contact').addClass('active');
@@ -8,26 +8,26 @@ $(function() {
 	case 'About':
 		$('#about').addClass('active');
 		break;
-	case 'Home':
+		case 'Home':
 		$('#home').addClass('active');
-		console.log("hello this is log");
+		console.log("hello this is home log");
 		break;
 	case 'User Cart':
 		$('#userCart').addClass('active');
 		console.log("hello this is log");
 		break;
 	case 'All Products':
-		
 		$('#products').addClass('active');
 		break;
 
 	case 'Manage Products':
 		$('#manageProducts').addClass('active');
 		break;
+	
 	default:
 
-		$('#products').addClass('active');
-		$('a_' + menu).addClass('active');
+		$('#home').addClass('active');
+	    $('a_' + menu).addClass('active');
 		break;
 
 	}
@@ -42,7 +42,7 @@ $(function() {
 	 * 
 	 * 
 	 *  ];
-	 */
+	 
 	console.log("hello this is log");
 	$table = $('#productListTable');
 	// execute the bellow code only where we have this table
@@ -492,4 +492,4 @@ var $categoryForm=$('#categoryForm');
 	
 	
 	//------------------------------
-});
+*/});
